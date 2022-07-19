@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure--x4lbc2jzr6a5u74)xoj#v2@@*q&sbp-rpo%)5f5uai0224xvm
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS =['https://outlookmail.azurewebsites.net']
 
 
 # Application definition
