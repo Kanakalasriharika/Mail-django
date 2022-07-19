@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'outlookmail'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_FE0E201E52F84E3D84651881E47E9D9C }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6170CE67FD3D4AA6861D1B6AE10C2012 }}
