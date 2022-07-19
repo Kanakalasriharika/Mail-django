@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{%load static%}
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static '/stylesheet.css' %}" />
+        <meta charset="UTF-8">
+    </head>
+    <body id="bg" style="background-image: url('{%static 'img/nw.jpeg'%}');">
+        <div class="hari">
+          <p> Harika.in &#128151;</p>
+        </div>
+<h1 class="hehe">MAIL NOW USING OUTLOOK</h1>
+<h3 class="msg">This software helps you to send mails from outlook account to another outlook account.<br>
+    This is a third party software.</h3>
+ <section id="sec">
+    <div class="hello">
+     <form action="send" id="form" method="POST">
+            {% csrf_token %}
+            <div class="huhu">
+                MAIL
+            </div>
+        <div class="item">
+       USERMAIL:<br><input type="email" name="email" placeholder="From mail" ></div><br>
+       <div class="item">
+        PASSWORD:<br><input type="password" name="password" placeholder="Enter password">
+        </div><br>
+        <div class="item">
+        TO MAIL:<br><input type="email" name="tomail" placeholder="To Mail">
+        </div><br>
+       <div class="item">
+        SUBJECT:<br><input type="text" name="subject" placeholder="Subject"> 
+       </div><br>
+<div class="item">
+       MESSAGE:<br><textarea rows="4" cols="40" name="text" ></textarea>
+</div><br>
+<div class="action">
+    <input type="submit" name="button" value="SEND MESSAGE" style="text-align:center;">
+</div><br>
+        </form>
+    </div>
+ </section>
+    </body>
+</html>
